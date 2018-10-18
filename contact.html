@@ -14,7 +14,7 @@
   <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
   <meta name="msapplication-TileColor" content="#ffffff">
   <meta name="theme-color" content="#ffffff">
-  <title>Yury Martynau - Developer.Business Intelligence.Web.Full-Stack - Notes</title>
+  <title>Yury Martynau - Developer.Business Intelligence.Web.Full-Stack - Contact</title>
   <link href="/css/styles-v1.css" rel="stylesheet">
 
 </head>
@@ -39,12 +39,12 @@
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="/resume.html">Résumé</a>
             </li>
-            <li class="nav-item current">
+            <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="/notes.html">Notes</a>
             </li>
-           <li class="nav-item">
+            <li class="nav-item current">
               <a class="nav-link js-scroll-trigger" href="/contact.html">Contact</a>
-            </li>            
+            </li>             
           </ul>
         </div>
       </div>
@@ -55,20 +55,42 @@
     <div class="container">
       <div class="row">
         <div class="col-12 mx-auto">
-          <h1>Notes</h1>
+          <h1>Contact</h1>
         </div>
       </div>
     </div>
   </header>
 
-  <section id="notes">
+  <section id="contact">
 
-  </section>
-
-  <section id="photos-full" class="last-section">
-
-    <div class="container-fluid no-gutters full-width text-center">
-      <a href="#" id="load_more_button" class="btn btn-default btn-lg">load more</a>
+    <div class="container">
+      <div class="row">
+        <div class="col-12 mx-auto">
+          <form id="sendForm">
+            <div class="form-group">
+              <input class="form-control" type="text" id="you" placeholder="Your name" required>
+              <div class="invalid-feedback">
+                Please provide your name.
+              </div>
+            </div>
+            <div class="form-group">
+              <input type="email" class="form-control" id="yourEmail" aria-describedby="email" placeholder="Your email" required>
+              <small id="emailTint" class="form-text text-muted">I'll never share your email with anyone else.</small>
+              <div class="invalid-feedback">
+                Please provide your email.
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="yourMessage">Your message</label>
+              <textarea class="form-control" id="yourMessage" rows="3" required></textarea>
+              <div class="invalid-feedback">
+                Please write me something.
+              </div>
+            </div>      
+            <button type="submit" id="sendMessage" class="btn btn-default btn-lg" onclick="javascript: core.sendMessage(this);">Send message</button>
+          </form>
+       </div>
+      </div>
     </div>
 
   </section>
@@ -77,7 +99,6 @@
     <div class="container text-center">
       <div class="row">
         <div class="col-12 col-md-4">
-          <a href="/contact.html" class="btn btn-default btn-lg">Contact</a>
         </div>
         <div class="col-12 col-md-8 social-icons">
           <p>
@@ -101,7 +122,43 @@
     </div>
   </footer>
 
-  <script src="/js/notes-v1.js"></script>
+  <script src="/js/main-v1.js"></script>
+
+  <!-- Yandex.Metrika counter -->
+  <script type="text/javascript" >
+      (function (d, w, c) {
+          (w[c] = w[c] || []).push(function() {
+              try {
+                  w.yaCounter50680021 = new Ya.Metrika2({
+                      id:50680021,
+                      clickmap:true,
+                      trackLinks:true,
+                      accurateTrackBounce:true
+                  });
+              } catch(e) { }
+          });
+
+          var n = d.getElementsByTagName("script")[0],
+              s = d.createElement("script"),
+              f = function () { n.parentNode.insertBefore(s, n); };
+          s.type = "text/javascript";
+          s.async = true;
+          s.src = "https://mc.yandex.ru/metrika/tag.js";
+
+          if (w.opera == "[object Opera]") {
+              d.addEventListener("DOMContentLoaded", f, false);
+          } else { f(); }
+      })(document, window, "yandex_metrika_callbacks2");
+  </script>
+  <noscript><div><img src="https://mc.yandex.ru/watch/50680021" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+  <!-- /Yandex.Metrika counter -->
+
+  <style>
+    html {
+      height: 100%;
+    }
+  </style>
+
 
 </body>
 
