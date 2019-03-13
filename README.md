@@ -1,5 +1,7 @@
 # martynau.github.io
 
-## TODO
-1. chunk js
-2. fix css layout for mobile
+ __ __ _____ 
+|  |  |     |
+|_   _| | | |
+  |_| |_|_|_|
+
